@@ -23,7 +23,7 @@ public class Boletin10_2 {
      
             String intentos=JOptionPane.showInputDialog("Ingrese número de oportunidades:");
             int compara = Integer.parseInt(intentos);
-        
+            int u=0;
             int numero = (int) (Math.random() * 50) + 1;
         
             for(int i=0;i<compara;i++){
@@ -34,6 +34,7 @@ public class Boletin10_2 {
                 if(num22==numero){
                     i=compara;
                     JOptionPane.showMessageDialog(null,"Bien!Lo has conseguido.");
+                    u=1;
                 }
                 else if((num22-20)>numero || (num22+20)<numero){
                     JOptionPane.showMessageDialog(null,"Muy lejos.");
@@ -50,6 +51,9 @@ public class Boletin10_2 {
                 else
                     JOptionPane.showMessageDialog(null,"Inténtelo de nuevo.");
             }
+            
+            if(u==0)
+                JOptionPane.showMessageDialog(null, "Número de intentos excedidos");
         }        
     }
 }
