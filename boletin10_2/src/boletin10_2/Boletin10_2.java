@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package boletin10_1;
+package boletin10_2;
 
 import javax.swing.JOptionPane;
 
@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author dani
  */
-public class Boletin10_1 {
+public class Boletin10_2 {
 
     /**
      * @param args the command line arguments
