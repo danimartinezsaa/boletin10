@@ -35,11 +35,17 @@ public class Boletin10_2 {
                     i=compara;
                     JOptionPane.showMessageDialog(null,"Bien!Lo has conseguido.");
                 }
-                else if(num22>numero){
-                    JOptionPane.showMessageDialog(null,"El número introducido es mayor.");
+                else if((num22-20)>numero || (num22+20)<numero){
+                    JOptionPane.showMessageDialog(null,"Muy lejos.");
                 }
-                else if(num22<numero){
-                    JOptionPane.showMessageDialog(null,"El número introducido es menor.");
+                else if(((num22-20)<=numero && (num22-10)>=numero)||((num22+20)>=numero && (num22+10)<=numero)){
+                    JOptionPane.showMessageDialog(null,"Cerca.");
+                }
+                else if(((num22-10)<numero && (num22-5)>=numero)||((num22+10)>=numero && (num22+5)<numero)){
+                    JOptionPane.showMessageDialog(null,"Cerca.");
+                }
+                else if(((num22-5)<numero||(num22+5)>numero)){
+                    JOptionPane.showMessageDialog(null,"Muy Cerca.");
                 }
                 else
                     JOptionPane.showMessageDialog(null,"Inténtelo de nuevo.");
