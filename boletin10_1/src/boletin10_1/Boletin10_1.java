@@ -20,17 +20,12 @@ public class Boletin10_1 {
     
         
         while(1==1){
-     
-            String num=JOptionPane.showInputDialog("Ingrese un numero:");
-            String intentos=JOptionPane.showInputDialog("Ingrese número de oportunidades:");
-            int compara = Integer.parseInt(intentos);
-            int numero=Integer.parseInt(num);
-        
-        
+
+            int compara = Integer.parseInt(JOptionPane.showInputDialog("Ingrese número de oportunidades:"));
+            int numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero:"));
         
             for(int i=0;i<compara;i++){
-                String num2=JOptionPane.showInputDialog("Adivine el número:");
-                int num22=Integer.parseInt(num2);
+                int num22=Integer.parseInt(JOptionPane.showInputDialog("Adivine el número:"));
                 if(num22==numero){
                     i=compara;
                     JOptionPane.showMessageDialog(null,"Bien!Lo has conseguido.");
