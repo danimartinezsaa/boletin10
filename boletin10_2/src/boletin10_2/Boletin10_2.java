@@ -28,23 +28,23 @@ public class Boletin10_2 {
         
             for(int i=0;i<compara;i++){
                 
-                int num22=Integer.parseInt(JOptionPane.showInputDialog("Adivine el número:"));
+                int num=Integer.parseInt(JOptionPane.showInputDialog("Adivine el número:"));
                 
-                if(num22==numero){
+                if(num==numero){
                     i=compara;
                     JOptionPane.showMessageDialog(null,"Bien!Lo has conseguido.");
                     u=1;
                 }
-                else if((num22-20)>numero || (num22+20)<numero){
+                else if((num-20)>numero || (num+20)<numero){
                     JOptionPane.showMessageDialog(null,"Muy lejos.");
                 }
-                else if(((num22-20)<=numero && (num22-10)>=numero)||((num22+20)>=numero && (num22+10)<=numero)){
+                else if(((num-20)<=numero && (num-10)>=numero)||((num+20)>=numero && (num+10)<=numero)){
                     JOptionPane.showMessageDialog(null,"Cerca.");
                 }
-                else if(((num22-10)<numero && (num22-5)>=numero)||((num22+10)>=numero && (num22+5)<numero)){
+                else if(((num-10)<numero && (num-5)>=numero)||((num+10)>=numero && (num+5)<numero)){
                     JOptionPane.showMessageDialog(null,"Cerca.");
                 }
-                else if(((num22-5)<numero||(num22+5)>numero)){
+                else if(((num-5)<numero||(num+5)>numero)){
                     JOptionPane.showMessageDialog(null,"Muy Cerca.");
                 }
                 else
