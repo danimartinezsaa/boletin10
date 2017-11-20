@@ -25,15 +25,15 @@ public class Boletin10_1 {
             int numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero:"));
         
             for(int i=0;i<compara;i++){
-                int num22=Integer.parseInt(JOptionPane.showInputDialog("Adivine el número:"));
-                if(num22==numero){
+                int num=Integer.parseInt(JOptionPane.showInputDialog("Adivine el número:"));
+                if(num==numero){
                     i=compara;
                     JOptionPane.showMessageDialog(null,"Bien!Lo has conseguido.");
                 }
-                else if(num22>numero){
+                else if(num>numero){
                     JOptionPane.showMessageDialog(null,"El número introducido es mayor.");
                 }
-                else if(num22<numero){
+                else if(num<numero){
                     JOptionPane.showMessageDialog(null,"El número introducido es menor.");
                 }
                 else
