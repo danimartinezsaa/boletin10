@@ -28,8 +28,7 @@ public class Boletin10_2 {
         
             for(int i=0;i<compara;i++){
                 
-                String num2=JOptionPane.showInputDialog("Adivine el número:");
-                int num22=Integer.parseInt(num2);
+                int num22=Integer.parseInt(JOptionPane.showInputDialog("Adivine el número:"));
                 
                 if(num22==numero){
                     i=compara;
